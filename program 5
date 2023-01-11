@@ -1,0 +1,40 @@
+//*to find square root of any number
+#include<stdio.h>
+int main()
+{
+    int number;
+    float temp, sqrt;
+
+    printf("Provide the number: \n");
+    scanf("%d", &number);
+
+    sqrt = number / 2;
+    temp = 0;
+
+    while(sqrt != temp)
+    {
+        temp = sqrt;
+        sqrt = ( number/temp + temp) / 2;
+    }
+   
+    printf("The square root of '%d' is '%f' \n", number, sqrt);
+
+ 
+//*to find the power of any number
+    int base, exp;
+    long long int result =1;
+    
+    printf("Enter a base number: ");
+    scanf("%d", &base);
+    
+    printf("Enter an exponent: ");
+    scanf("%d", &exp);
+
+    while (exp != 0) 
+    {
+        result *= base;
+        --exp;
+    }
+    printf("Answer = %d", result);
+    
+}
