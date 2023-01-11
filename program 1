@@ -1,12 +1,39 @@
 #include<stdio.h>
 int main()
 {
-/*addition of two numbers
+//*addition of two numbers
   int a,b,c;
-  pritnf("Enter the first nummber:");
-  scanf("%d",&a \n);
+  printf("Enter the first nummber:");
+  scanf("%d",&a);
   printf("Enter the second number:");
-  scanf("%d",&a \n);
+  scanf("%d",&b);
   c=a+b;
-  printf("The sum of the number a and b is=%d",&c);
+  printf("The sum of the number a and b is=%d",c);
+  
+//*subtraction of two numbers
+  int d,e,f;
+  printf("Enter the larger number:");
+  scanf("%d",&d);
+  printf("Enter the smaller number:");
+  scanf("%d",&e);
+  f=(d-e);
+  printf("The difference of the two numbers is: \n",f);
+
+//* division of two numbers
+  int g,h,i;
+  printf("Enter the larger nummber:");
+  scanf("%d",&g);
+  printf("Enter the smaller number:");
+  scanf("%d",&h);
+  i=(g/h);
+  printf("The answer is: \n",i);
+  
+//*multiplication of two numbers
+  int j,k,l;
+  printf("Enter the first nummber:");
+  scanf("%d",&j);
+  printf("Enter the second number:");
+  scanf("%d",&k);
+  l=(j*k);
+  printf("The answer is:",l);
 }
