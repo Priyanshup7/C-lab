@@ -1,4 +1,4 @@
-/*area of triangle if base and height is given
+//*area of triangle if base and height is given
 #include<stdio.h>
 int main()
 {
