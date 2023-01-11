@@ -1,0 +1,38 @@
+//*to swap two no. using third var
+#include<stdio.h>
+int main() 
+{
+  int first, second, temp;
+ 
+  printf("Enter first number: ");
+  scanf("%d", &first);
+  
+  printf("Enter second number: ");
+  scanf("%d", &second);
+  
+  temp = first;
+  first = second;
+  second = temp;
+
+  printf("After swapping, first number = %d \n", first);
+  printf("After swapping, second number = %d ", second);
+  
+//*swap two no. without using third var
+  
+  int a, b;
+  
+  printf("Enter a: ");
+  scanf("%d", &a);
+  
+  printf("Enter b: ");
+  scanf("%d", &b);
+
+  a = a - b;   
+  b = a + b;
+  a = b - a;
+  
+  printf("After swapping, a = %d\n", a);
+  printf("After swapping, b = %d", b);
+  
+  return 0;
+}
