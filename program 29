@@ -1,0 +1,13 @@
+//* to print asci value of all characters
+#include <stdio.h>
+int main()
+{  
+    char i;  
+    
+    for(i='A'; i<='Z'; i++)
+    {
+     printf("ASCII value of %c = %d", c, c);
+    }
+   
+   return 0;
+}
