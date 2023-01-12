@@ -1,0 +1,25 @@
+//*to print all natural numbers and sum of it from 1 to n
+#include <stdio.h>
+int main()
+{
+    int i, n, sum;
+
+    printf("Enter any number: ");
+    scanf("%d", &n);
+
+    printf("Natural numbers from 1 to %d : \n", n);
+
+    for(i=1; i<=n; i++)
+    {
+        printf("%d\n", i);
+    }
+    
+    for (i = 1; i <= n; ++i)
+    {
+        sum += i;
+    }
+
+    printf("Sum = %d", sum);
+   
+   return 0;
+}
