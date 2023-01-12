@@ -1,0 +1,56 @@
+//*to print all perfect numbers between 1 to n and check a given number is a perfect number or not
+#include <stdio.h>
+int main()
+{
+    int i, j, end, sum1;
+
+    printf("Enter upper limit: ");
+    scanf("%d", &end);
+
+    printf("All Perfect numbers between 1 to %d:\n", end);
+    
+    for(i=1; i<=end; i++)
+    {
+        sum1 = 0;
+        
+        for(j=1; j<i; j++)
+        {
+            if(i % j == 0)
+            {
+                sum1 += j;
+            }
+        }
+
+        if(sum1 == i)
+        {
+            printf("%d, ", i);
+        }
+    }
+
+//*to check a given number is perfect number or not 
+    
+    int j, num, sum = 0;
+
+    printf("Enter any number to check perfect number: ");
+    scanf("%d", &num);
+
+    for(j = 1; j <= num / 2; j++)
+    {
+        if(num%j == 0)
+        {
+            sum += j;
+        }
+    }
+
+    if(sum == num && num > 0)
+    {
+        printf("%d is PERFECT NUMBER", num);
+    }
+    else
+    {
+        printf("%d is NOT PERFECT NUMBER", num);
+    }
+
+    return 0;
+
+}
